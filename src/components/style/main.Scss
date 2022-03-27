@@ -1,0 +1,33 @@
+$primary: #00AD90;
+$secondary: #00E0BB;
+$background: #006151;
+$light: #5AE6CE;
+$gray: #546663;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@mixin placeItem($col,$row,$rotate: 0deg, $justify: flex-start){
+  grid-column: $col;
+  grid-row: $row;
+  transform: rotate($rotate);
+  justify-self: $justify;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $gray;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr 1400px 1fr;
+}
+
+.dash{
+    background-color: $light;
+    justify-self: center;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}

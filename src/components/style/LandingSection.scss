@@ -1,0 +1,126 @@
+@import "./main.Scss";
+
+.landing-wrapper{
+    background-color: $primary;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1400px 1fr;
+}
+
+.landing-section{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(4,100px) 600px repeat(4,100px);
+    grid-template-rows: repeat(10, 1fr);
+    width: 100%;
+    height: 100vh;
+}
+
+.icon-bar{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    height: 50px;
+    z-index: 3;
+    img{
+        height: 100%;
+        margin-right: 10px;
+    }
+}
+
+.logo{
+    @include placeItem(5,5,0deg,center);
+    position: relative;
+    align-self: center;
+    .logo-back{
+        position: absolute;
+        top:-110px;
+        left: -20px;
+        z-index: 1;
+    }
+    .logo-front{
+        position: relative;
+        z-index: 2;
+    }
+    &::before{
+        content: '<webdev />';
+        position: absolute;
+        top: 160px;
+        color: $background;
+        font-size: 110px;
+        text-align: center;
+        font-weight: 300;
+        text-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+    }
+}
+
+.skill{
+    position: relative;
+    color: $light;
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+    transform-origin:center;
+    user-select: none;
+    z-index: 4;
+}
+
+.skill-html{
+    @include placeItem(4,1,-5deg);
+    align-self:flex-end;
+}
+
+.skill-js{
+    @include placeItem(5,1,10deg,flex-end);
+    align-self: flex-end;
+}
+
+.skill-git{
+    @include placeItem(9,2,-10deg);
+}
+
+.skill-gsap{
+    @include placeItem(2,4,-20deg);
+}
+
+.skill-es6{
+    @include placeItem(8,4,10deg);
+}
+
+.skill-react{
+    @include placeItem(2,6,10deg);
+}
+
+.skill-css{
+    @include placeItem(8,6,-10deg);
+}
+
+.skill-sass{
+    @include placeItem(7,8,-20deg);
+}
+
+.skill-xd{
+    @include placeItem(4,10,-10deg);
+}
+
+.skill-photoshop{
+    @include placeItem(7,10,15deg,flex-end);
+}
+
+.open-curly-bracket{
+    @include placeItem(1,1);
+}
+
+.close-curly-bracket{
+    @include placeItem(9,10,0deg,flex-end);
+}
+
+.dash-1{
+    margin-bottom: -100px;
+    align-self:flex-end;
+    grid-column: 5;
+    grid-row: 10;
+    height: 200px;
+    width: 10px;
+}

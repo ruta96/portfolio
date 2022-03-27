@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #546663;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1400px 1fr;
+      grid-template-columns: 1fr 1400px 1fr;
+}
+
+.landing-wrapper {
+  background-color: #00AD90;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1400px 1fr;
+      grid-template-columns: 1fr 1400px 1fr;
+}
+
+.landing-section {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100px)[4] 600px (100px)[4];
+      grid-template-columns: repeat(4, 100px) 600px repeat(4, 100px);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  width: 100%;
+  height: 100vh;
+}
+
+.icon-bar {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  height: 50px;
+  z-index: 3;
+}
+
+.icon-bar img {
+  height: 100%;
+  margin-right: 10px;
+}
+
+.logo {
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.logo .logo-back {
+  position: absolute;
+  top: -110px;
+  left: -20px;
+  z-index: 1;
+}
+
+.logo .logo-front {
+  position: relative;
+  z-index: 2;
+}
+
+.logo::before {
+  content: '<webdev />';
+  position: absolute;
+  top: 160px;
+  color: #006151;
+  font-size: 110px;
+  text-align: center;
+  font-weight: 300;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.skill {
+  position: relative;
+  color: #5AE6CE;
+  font-size: 45px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 4;
+}
+
+.skill-html {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  justify-self: flex-start;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.skill-js {
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  justify-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.skill-git {
+  -ms-grid-column: 9;
+  grid-column: 9;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  justify-self: flex-start;
+}
+
+.skill-gsap {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  justify-self: flex-start;
+}
+
+.skill-es6 {
+  -ms-grid-column: 8;
+  grid-column: 8;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  justify-self: flex-start;
+}
+
+.skill-react {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 6;
+  grid-row: 6;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  justify-self: flex-start;
+}
+
+.skill-css {
+  -ms-grid-column: 8;
+  grid-column: 8;
+  -ms-grid-row: 6;
+  grid-row: 6;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  justify-self: flex-start;
+}
+
+.skill-sass {
+  -ms-grid-column: 7;
+  grid-column: 7;
+  -ms-grid-row: 8;
+  grid-row: 8;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  justify-self: flex-start;
+}
+
+.skill-xd {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 10;
+  grid-row: 10;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  justify-self: flex-start;
+}
+
+.skill-photoshop {
+  -ms-grid-column: 7;
+  grid-column: 7;
+  -ms-grid-row: 10;
+  grid-row: 10;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  justify-self: flex-end;
+}
+
+.open-curly-bracket {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  justify-self: flex-start;
+}
+
+.close-curly-bracket {
+  -ms-grid-column: 9;
+  grid-column: 9;
+  -ms-grid-row: 10;
+  grid-row: 10;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  justify-self: flex-end;
+}
+
+.dash-1 {
+  margin-bottom: -100px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 10;
+  grid-row: 10;
+  height: 200px;
+  width: 10px;
+}
+/*# sourceMappingURL=LandingSection.css.map */

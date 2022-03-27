@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="568.659" height="175.397" viewBox="0 0 568.659 175.397">
+  <defs>
+    <filter id="Path_151" x="0" y="0" width="568.659" height="175.397" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_151-2" x="0" y="0" width="568.659" height="175.397" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.502" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="MICHAŁ" x="94.731" y="3.468" width="374.078" height="153.21" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_151)">
+      <path id="Path_151-3" data-name="Path 151" d="M0,0H546.161V138.421H0Z" transform="translate(9 25.06) rotate(-2)" fill="#006151"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_151-2)">
+      <path id="Path_151-4" data-name="Path 151" d="M0,0H546.161V138.421H0Z" transform="translate(9 25.06) rotate(-2)" fill="#fff"/>
+    </g>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#MICHAŁ)">
+    <text id="MICHAŁ-2" data-name="MICHAŁ" transform="translate(107.15 119.69) rotate(-2)" fill="#00ad90" font-size="94" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">MICHAŁ</tspan></text>
+  </g>
+</svg>

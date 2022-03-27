@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="568.659" height="175.397" viewBox="0 0 568.659 175.397">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.029" y1="0.146" x2="0.979" y2="0.94" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00ad90"/>
+      <stop offset="0.223" stop-color="#00ad90"/>
+      <stop offset="1" stop-color="#00e0bb"/>
+    </linearGradient>
+    <filter id="Path_1" x="0" y="0" width="568.659" height="175.397" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="RUTA">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.502" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_1)">
+    <g id="Path_1-2" data-name="Path 1" transform="translate(13.83 6) rotate(2)" fill="url(#linear-gradient)">
+      <path d="M 543.6608276367188 135.9208831787109 L 2.499985218048096 135.9208831787109 L 2.499985218048096 2.500028371810913 L 543.6608276367188 2.500028371810913 L 543.6608276367188 135.9208831787109 Z" stroke="none"/>
+      <path d="M 5 5.000030517578125 L 5 133.4208831787109 L 541.1608276367188 133.4208831787109 L 541.1608276367188 5.000030517578125 L 5 5.000030517578125 M 0 3.0517578125e-05 L 546.1608276367188 3.0517578125e-05 L 546.1608276367188 138.4208831787109 L 0 138.4208831787109 L 0 3.0517578125e-05 Z" stroke="none" fill="#006151"/>
+    </g>
+  </g>
+  <g data-type="innerShadowGroup">
+    <text id="RUTA-2" data-name="RUTA" transform="translate(113.31 125.255) rotate(2)" fill="#006151" font-size="119" font-family="Roboto-Medium, Roboto" font-weight="500" letter-spacing="0.12em"><tspan x="0" y="0">RUTA</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#RUTA)">
+      <text id="RUTA-3" data-name="RUTA" transform="translate(113.31 125.25) rotate(2)" fill="#fff" font-size="119" font-family="Roboto-Medium, Roboto" font-weight="500" letter-spacing="0.12em"><tspan x="0" y="0">RUTA</tspan></text>
+    </g>
+  </g>
+</svg>
