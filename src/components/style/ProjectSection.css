@@ -50,7 +50,7 @@ body {
   grid-column: 2;
   display: -ms-grid;
   display: grid;
-  margin-left: 60px;
+  margin-left: 90px;
   -ms-grid-columns: 400px 400px;
       grid-template-columns: 400px 400px;
   margin-top: 200px;
@@ -100,9 +100,9 @@ body {
 
 .project-braces-open {
   margin-top: 150px;
-  margin-left: 80px;
   -ms-grid-column: 1;
   grid-column: 1;
+  justify-self: flex-end;
 }
 
 .project-braces-close {
