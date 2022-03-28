@@ -1,0 +1,83 @@
+@import './main.Scss';
+
+.project-wrapper{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1400px 1fr;
+    min-height: 100vh;
+    position: relative;
+}
+
+.project-section{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 200px 1000px 200px;
+}
+
+
+.project-gallery{
+    grid-column: 2;
+    display: grid;
+    margin-left: 60px;
+    grid-template-columns: 400px 400px;
+    margin-top: 200px;
+    gap: 20px;
+    color: $background;
+    .project-gallery-item{
+        width: 400px;
+        height: 300px;
+        background-color: $secondary;
+        display: grid;
+        grid-template-rows: 200px 100px;
+        grid-template-columns: 400px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+        .gallery-item-image{
+            height: 150px;
+            justify-self: center;
+            align-self: center;
+        }
+        .gallery-item-text{
+            font-weight: 500;
+            font-size: 50px;
+            text-align: center;
+            place-self: center;
+            }
+    }   
+}
+
+.project-braces{
+    position: relative;
+    z-index: 1;
+    color: $light;
+    font-weight: 300;
+    font-size: 120px;
+    text-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+}
+
+.project-braces-open{
+    margin-top: 150px;
+    margin-left: 80px;
+    grid-column: 1;
+}
+
+.project-braces-close{
+    grid-column: 3;
+    grid-row-end: 3;
+}
+
+.project-triangle{
+    height: 500px;
+}
+
+.project-triangle-left{
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+
+.project-triangle-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
