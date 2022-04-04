@@ -14,12 +14,12 @@ export const LandingSection = () => {
     <div className='landing-wrapper'>
         <div className='landing-section'>
             <div className='icon-bar'>
-              <a href="https://foundry.ruciak.pl"><img src={dice} alt="dice" /></a>
+              <a href="http://130.61.217.110:30000/"><img src={dice} alt="dice" /></a>
               <a href="mailto:michal.ruta.1996@gmail.com"><img src={mail} alt="mail" /></a>
               <a href="https://www.linkedin.com/in/michalruta/"><img src={linkedin} alt="linkedin" /></a>
-              <a href="https://github.com/ruta96"><img src={github} alt="github" /></a>
+              <a href="https://www.github.com/ruta96"><img src={github} alt="github" /></a>
             </div>
-            <img src={openCurlyBracket} alt="bracket" className='open-curly-bracket'/>
+            <img src={openCurlyBracket} alt="bracket" className='curly-bracket open-curly-bracket'/>
             <div className='logo'>
                 <img src={logoback} alt="logo" className='logo-back'/>
                 <img src={logomain} alt="logo" className='logo-front'/>

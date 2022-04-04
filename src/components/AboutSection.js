@@ -7,7 +7,7 @@ function AboutSection() {
     <div className='about-section'>
         <div className='about-name'>Hi, my name is <div className='about-name-light'>Michał</div></div>
         <div className='dash dash-2'></div>
-        <div className='about-desc'> Web Developer | Content Creator | Game Master</div>
+        <div className='about-desc'>Web Developer <span className='about-desc-separator'>|</span> Content Creator <span className='about-desc-separator'>|</span> Game Master</div>
         <div className='about-check'>Check Out My Projects!</div>
         <img className='about-arrow' src={arrow} alt="arrow"/>
         <div className='dash dash-vertical dash-3'></div>

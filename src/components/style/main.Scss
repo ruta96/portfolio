@@ -3,6 +3,10 @@ $secondary: #00E0BB;
 $background: #006151;
 $light: #5AE6CE;
 $gray: #546663;
+
+$medium: 1450px;
+$small: 800px;
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 @mixin placeItem($col,$row,$rotate: 0deg, $justify: flex-start){
@@ -23,6 +27,10 @@ body{
 .main-container{
   display: grid;
   grid-template-columns: 1fr 1400px 1fr;
+  overflow-x: hidden;
+  @media (max-width: $medium) {
+      grid-template-columns: 1fr 800px 1fr;
+  }
 }
 
 .dash{

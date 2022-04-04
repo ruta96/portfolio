@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="147" viewBox="0 0 38 147">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.141" height="107.352" viewBox="0 0 33.141 107.352">
   <defs>
-    <filter id="_" x="0" y="0" width="38" height="147" filterUnits="userSpaceOnUse">
+    <filter id="Path_154" x="0" y="0" width="33.141" height="107.352" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feFlood flood-opacity="0.502" result="color"/>
@@ -10,9 +10,9 @@
     </filter>
   </defs>
   <g data-type="innerShadowGroup">
-    <text id="_2" data-name="{" transform="translate(0 117)" fill="#006151" font-size="112" font-family="Roboto-Regular, Roboto" letter-spacing="0.12em"><tspan x="0" y="0">{</tspan></text>
-    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_)">
-      <text id="_3" data-name="{" transform="translate(0 117)" fill="#fff" font-size="112" font-family="Roboto-Regular, Roboto" letter-spacing="0.12em"><tspan x="0" y="0">{</tspan></text>
+    <path id="Path_154-2" data-name="Path 154" d="M34.563,20.016q-9.68-2.734-14.574-9T15.094-5.523V-16.406Q15.094-29.7,3.5-29.7v-7.93q11.594,0,11.594-13.234V-62.234q.109-10.008,4.895-16.16t14.574-8.941l2.078,6.289q-11.43,3.664-11.43,19.086v11.047q0,12.414-9.133,17.281,9.133,4.922,9.133,17.445V-4.922q.164,15.039,11.43,18.648Z" transform="translate(-3.5 87.336)" fill="#006151"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_154)">
+      <path id="Path_154-3" data-name="Path 154" d="M34.563,20.016q-9.68-2.734-14.574-9T15.094-5.523V-16.406Q15.094-29.7,3.5-29.7v-7.93q11.594,0,11.594-13.234V-62.234q.109-10.008,4.895-16.16t14.574-8.941l2.078,6.289q-11.43,3.664-11.43,19.086v11.047q0,12.414-9.133,17.281,9.133,4.922,9.133,17.445V-4.922q.164,15.039,11.43,18.648Z" transform="translate(-3.5 87.34)" fill="#fff"/>
     </g>
   </g>
 </svg>

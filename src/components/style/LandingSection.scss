@@ -6,6 +6,9 @@
     display: grid;
     grid-template-columns: 1fr 1400px 1fr;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+    @media (max-width: $medium) {
+        grid-template-columns: 1fr 800px 1fr;
+    }
 }
 
 .landing-section{
@@ -14,6 +17,9 @@
     grid-template-columns: repeat(4,100px) 600px repeat(4,100px);
     width: 100%;
     min-height: 100vh;
+    @media (max-width: $medium) {
+        grid-template-columns: repeat(4, 50px) 400px repeat(4, 50px);
+    }
 }
 
 .icon-bar{
@@ -37,10 +43,12 @@
         top:-110px;
         left: -20px;
         z-index: 1;
+        width: 100%;
     }
     .logo-front{
         position: relative;
         z-index: 2;
+        width: 100%;
     }
     &::before{
         content: '<webdev />';
@@ -48,9 +56,17 @@
         top: 160px;
         color: $background;
         font-size: 110px;
-        text-align: center;
         font-weight: 300;
         text-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+    }
+    @media (max-width: $medium) {
+        .logo-back{
+            top:-75px;
+        }
+        &::before{
+            font-size: 79px;
+            top: 120px;
+        }
     }
 }
 
@@ -64,6 +80,9 @@
     transform-origin:center;
     user-select: none;
     z-index: 4;
+    @media (max-width: $medium) {
+        font-size: 40px;        
+    }
 }
 
 .skill-html{
@@ -78,6 +97,9 @@
 
 .skill-git{
     @include placeItem(9,2,-10deg);
+    @media (max-width: $medium) {
+        @include placeItem(7,2,-10deg);
+    }
 }
 
 .skill-gsap{
@@ -86,6 +108,10 @@
 
 .skill-es6{
     @include placeItem(8,4,10deg);
+    @media (max-width: $medium) {
+        margin-top: 40px;
+        @include placeItem(7,4,10deg);
+    }
 }
 
 .skill-react{
@@ -94,6 +120,9 @@
 
 .skill-css{
     @include placeItem(8,6,-10deg);
+    @media (max-width: $medium) {
+        @include placeItem(7,6,-10deg);
+    }
 }
 
 .skill-sass{
@@ -109,10 +138,13 @@
 }
 
 .open-curly-bracket{
+    margin-top: 20px;
+    margin-left: 20px;
     @include placeItem(1,1);
 }
 
 .close-curly-bracket{
+    margin-right: 20px;
     @include placeItem(9,10,0deg,flex-end);
 }
 
