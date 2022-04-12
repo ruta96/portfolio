@@ -9,6 +9,9 @@
     @media (max-width: $medium) {
         grid-template-columns: 1fr 800px 1fr;
     }
+    @media (max-width: $small) {
+        grid-template-columns: 1fr 500px 1fr;
+    }
 }
 
 .landing-section{
@@ -19,6 +22,11 @@
     min-height: 100vh;
     @media (max-width: $medium) {
         grid-template-columns: repeat(4, 50px) 400px repeat(4, 50px);
+    }
+    @media (max-width: $small){
+        grid-template-rows: 320px;
+        grid-template-columns: 20px 1fr 1fr 1fr 20px;
+        gap: 10px;
     }
 }
 
@@ -31,6 +39,12 @@
     img{
         height: 100%;
         margin-right: 10px;
+    }
+    @media (max-width: $small) {
+        height: 40px;
+        img{
+            margin-right: 8px;
+        }
     }
 }
 
@@ -68,6 +82,19 @@
             top: 120px;
         }
     }
+    @media (max-width: $small) {
+        margin-top: 120px;
+        grid-row: 1;
+        grid-column: 2/5;
+        width: 300px;
+        .logo-back{
+            top: -60px;
+        }
+        &::before{
+            top: 85px;
+            font-size: 59px;
+        }
+    }
 }
 
 .skill{
@@ -83,16 +110,27 @@
     @media (max-width: $medium) {
         font-size: 40px;        
     }
+    @media (max-width: $small) {
+        font-size: 30px;        
+    }
 }
 
 .skill-html{
     @include placeItem(4,1,-5deg);
     align-self:flex-end;
+    @media (max-width: $small) {
+        @include placeItem(2,2,8deg,flex-end);
+        align-self: center;
+    }
 }
 
 .skill-js{
     @include placeItem(5,1,10deg,flex-end);
     align-self: flex-end;
+    @media (max-width: $small) {
+        @include placeItem(3,3,17deg);
+        align-self: center;
+    }
 }
 
 .skill-git{
@@ -100,10 +138,17 @@
     @media (max-width: $medium) {
         @include placeItem(7,2,-10deg);
     }
+    @media (max-width: $small) {
+        @include placeItem(4,4,-5deg,center);
+    }
 }
 
 .skill-gsap{
     @include placeItem(2,4,-20deg);
+    @media (max-width: $small) {
+        @include placeItem(4,2,15deg);
+        align-self: center;
+    }
 }
 
 .skill-es6{
@@ -112,10 +157,17 @@
         margin-top: 40px;
         @include placeItem(7,4,10deg);
     }
+    @media (max-width: $small) {
+        @include placeItem(4,3,-5deg,flex-end);
+    }
 }
 
 .skill-react{
     @include placeItem(2,6,10deg);
+    @media (max-width: $small) {
+        @include placeItem(3,2,-10deg,center);
+        align-self: center;
+    }
 }
 
 .skill-css{
@@ -123,29 +175,52 @@
     @media (max-width: $medium) {
         @include placeItem(7,6,-10deg);
     }
+    @media (max-width: $small) {
+        @include placeItem(2,3,-5deg);
+    }
 }
 
 .skill-sass{
     @include placeItem(7,8,-20deg);
+    @media (max-width: $small) {
+        @include placeItem(2,4,15deg);
+    }
 }
 
 .skill-xd{
     @include placeItem(4,10,-10deg);
+    @media (max-width: $small) {
+        @include placeItem(2,5,-19deg);
+    }
 }
 
 .skill-photoshop{
     @include placeItem(7,10,15deg,flex-end);
+    @media (max-width: $small) {
+        @include placeItem(3,4,-10deg);
+    }
+}
+
+.curly-bracket{
+    height: 70px;
 }
 
 .open-curly-bracket{
     margin-top: 20px;
     margin-left: 20px;
     @include placeItem(1,1);
+    @media (max-width: $small){
+        margin-left: 0px;
+        grid-row: 2;
+    }
 }
 
 .close-curly-bracket{
     margin-right: 20px;
     @include placeItem(9,10,0deg,flex-end);
+    @media (max-width: $small) {
+        @include placeItem(5,5);
+    }
 }
 
 .dash-1{
@@ -155,4 +230,10 @@
     grid-row: 10;
     height: 200px;
     width: 10px;
+    @media (max-width: $small) {
+        grid-column: 3;
+        grid-row: 5;
+        height: 150px;
+        margin-bottom: -75px;
+    }
 }

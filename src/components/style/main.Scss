@@ -6,6 +6,7 @@ $gray: #546663;
 
 $medium: 1450px;
 $small: 800px;
+$smartphone: 500px;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
@@ -29,7 +30,10 @@ body{
   grid-template-columns: 1fr 1400px 1fr;
   overflow-x: hidden;
   @media (max-width: $medium) {
-      grid-template-columns: 1fr 800px 1fr;
+    grid-template-columns: 1fr 800px 1fr;
+  }
+  @media (max-width: $small) {
+    grid-template-columns: 1fr;
   }
 }
 

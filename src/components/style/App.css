@@ -13,6 +13,14 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1400px 1fr;
       grid-template-columns: 1fr 1400px 1fr;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1450px) {
+  .main-container {
+    -ms-grid-columns: 1fr 800px 1fr;
+        grid-template-columns: 1fr 800px 1fr;
+  }
 }
 
 .dash {

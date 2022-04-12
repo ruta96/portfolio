@@ -35,7 +35,7 @@ export const LandingSection = () => {
             <div className='skill skill-photoshop'>Photoshop</div>
             <div className='skill skill-xd'>Adobe Xd</div>
             <div className="dash dash-1"></div>
-            <img src={closeCurlyBracket} alt="bracket" className='close-curly-bracket'/>
+            <img src={closeCurlyBracket} alt="bracket" className='curly-bracket close-curly-bracket'/>
         </div>
     </div>
   )
