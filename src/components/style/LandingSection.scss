@@ -12,6 +12,9 @@
     @media (max-width: $small) {
         grid-template-columns: 1fr 500px 1fr;
     }
+    @media (max-width: $smartphone){
+        grid-template-columns: 1fr 300px 1fr;
+    }
 }
 
 .landing-section{
@@ -25,8 +28,12 @@
     }
     @media (max-width: $small){
         grid-template-rows: 320px;
-        grid-template-columns: 20px 1fr 1fr 1fr 20px;
+        grid-template-columns: 20px 1fr 2fr 1fr 20px;
         gap: 10px;
+    }
+    @media (max-width: $smartphone){
+        grid-template-columns: 10px 1fr 1.5fr 1fr 10px;
+        gap: 5px;   
     }
 }
 
@@ -85,7 +92,7 @@
     @media (max-width: $small) {
         margin-top: 120px;
         grid-row: 1;
-        grid-column: 2/5;
+        grid-column: 1/6;
         width: 300px;
         .logo-back{
             top: -60px;
@@ -93,6 +100,16 @@
         &::before{
             top: 85px;
             font-size: 59px;
+        }
+    }
+    @media (max-width: $smartphone){
+        width: 280px;
+        .logo-back{
+            top:-50px;
+        }
+        &::before{
+            top: 70px;
+            font-size: 55px;
         }
     }
 }
@@ -112,6 +129,10 @@
     }
     @media (max-width: $small) {
         font-size: 30px;        
+    }
+    @media (max-width: $smartphone){
+        font-size: 22px;
+        letter-spacing: 2px;
     }
 }
 
@@ -203,6 +224,9 @@
 
 .curly-bracket{
     height: 70px;
+    @media (max-width: $smartphone){
+     height: 55px;
+    }
 }
 
 .open-curly-bracket{

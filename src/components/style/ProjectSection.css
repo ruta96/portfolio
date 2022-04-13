@@ -13,7 +13,6 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1400px 1fr;
       grid-template-columns: 1fr 1400px 1fr;
-  overflow-x: hidden;
 }
 
 @media (max-width: 1450px) {
@@ -74,6 +73,10 @@ body {
       grid-template-columns: 1fr 5fr 1fr;
 }
 
+a {
+  text-decoration: none;
+}
+
 .project-gallery {
   -ms-grid-column: 2;
   grid-column: 2;
@@ -100,6 +103,7 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  color: #006151;
 }
 
 @media (max-width: 1450px) {
@@ -201,6 +205,12 @@ body {
 @media (max-width: 1450px) {
   .project-triangle {
     height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .project-triangle {
+    height: 230px;
   }
 }
 

@@ -20,7 +20,9 @@
     grid-template-columns: 1fr 5fr 1fr;
 }
 
-
+a{
+    text-decoration: none;
+}
 .project-gallery{
     grid-column: 2;
     display: grid;
@@ -38,6 +40,7 @@
         grid-template-rows: 250px;
         border-radius: 10px;
         box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+        color: $background;
         @media (max-width: $medium) {
             grid-template-rows: 180px;     
         }
@@ -103,6 +106,9 @@
     height: 500px;
     @media (max-width: $medium) {
         height: 400px;
+    }   
+    @media (max-width: $smartphone) {
+        height: 230px;
     }   
 }
 

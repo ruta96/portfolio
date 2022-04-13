@@ -2,7 +2,7 @@ import React from 'react';
 import './style/ProjectSection.css';
 import triangleLeft from '../static/triangle-left.svg';
 import triangleRight from '../static/triangle-right.svg';
-import dice from '../static/dice.svg'
+import Project from './Project';
 
 function ProjectSection() {
   return (
@@ -12,22 +12,10 @@ function ProjectSection() {
         <div className='project-section'>
             <div className='project-braces project-braces-open'>&#123;</div>
             <div className='project-gallery'>
-                <div className='project-gallery-item'>
-                    <img src={dice} alt="project" className='gallery-item-image' />
-                    <div className='gallery-item-text'>lorem ipsum</div>
-                </div>
-                <div className='project-gallery-item'>
-                    <img src={dice} alt="project" className='gallery-item-image' />
-                    <div className='gallery-item-text'>lorem ipsum</div>
-                </div>
-                <div className='project-gallery-item'>
-                    <img src={dice} alt="project" className='gallery-item-image' />
-                    <div className='gallery-item-text'>lorem ipsum</div>
-                </div>
-                <div className='project-gallery-item'>
-                    <img src={dice} alt="project" className='gallery-item-image' />
-                    <div className='gallery-item-text'>lorem ipsum</div>
-                </div>
+                <Project name="okw-rutex" link="https://rutex.netlify.app" />
+                <Project name="sabinakluz" link="https://sabinakluz.pl" />
+                <Project name="lorem ipsum" link="#" />
+                <Project name="lorem ipsum" link="#" />
             </div>
             <div className='project-braces project-braces-close'>&#125;</div>
         </div>
