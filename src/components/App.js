@@ -1,15 +1,17 @@
-import './style/App.css';
-import LandingSection from './LandingSection';
-import AboutSection from './AboutSection';
-import ProjectSection from './ProjectSection';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Home from './Home';
+import NotFound from './NotFound';
 
 function App() {
   return (
-    <div className='main-container'>
-    <LandingSection/>
-    <AboutSection/>
-    <ProjectSection/>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 

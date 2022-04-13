@@ -5,7 +5,7 @@ import dice from '../static/dice.svg';
 function Project(props) {
   return (
     <>
-    <a href={props.link}>
+    <a href={props.link} target="_blank" rel="noreferrer">
     <div className='project-gallery-item'>
         <img src={dice} alt="project" className='gallery-item-image' />
         <div className='gallery-item-text'>{props.name}</div>
