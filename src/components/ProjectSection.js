@@ -12,8 +12,8 @@ function ProjectSection() {
         <div className='project-section'>
             <div className='project-braces project-braces-open'>&#123;</div>
             <div className='project-gallery'>
-                <Project name="okw-rutex" link="https://rutex.netlify.app" />
-                <Project name="sabinakluz" link="https://sabinakluz.pl" />
+                <Project name="lorem ipsum" link="#" />
+                <Project name="lorem ipsum" link="#" />
                 <Project name="lorem ipsum" link="#" />
                 <Project name="lorem ipsum" link="#" />
             </div>

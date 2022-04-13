@@ -176,6 +176,10 @@
     align-self: flex-end;
     height: 300px;
     margin-bottom: -150px;
+    @media (max-width: $smartphone) {
+        height: 200px;
+        margin-bottom: -100px;
+    }
 }
 
 .dash-8{
@@ -183,4 +187,8 @@
     align-self: flex-end;
     height: 250px;
     margin-bottom: -80px;
+    @media (max-width: $smartphone) {
+        height: 150px;
+        margin-bottom: -60px;
+    }
 }

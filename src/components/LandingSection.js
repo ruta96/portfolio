@@ -14,7 +14,7 @@ export const LandingSection = () => {
     <div className='landing-wrapper'>
         <div className='landing-section'>
             <div className='icon-bar'>
-              <a href="http://130.61.217.110:30000/"><img src={dice} alt="dice" /></a>
+              <a href="http://foundry.ruciak.pl"><img src={dice} alt="dice" /></a>
               <a href="mailto:michal.ruta.1996@gmail.com"><img src={mail} alt="mail" /></a>
               <a href="https://www.linkedin.com/in/michalruta/"><img src={linkedin} alt="linkedin" /></a>
               <a href="https://www.github.com/ruta96"><img src={github} alt="github" /></a>

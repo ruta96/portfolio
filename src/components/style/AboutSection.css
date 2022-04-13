@@ -289,6 +289,13 @@ body {
   margin-bottom: -150px;
 }
 
+@media (max-width: 500px) {
+  .dash-7 {
+    height: 200px;
+    margin-bottom: -100px;
+  }
+}
+
 .dash-8 {
   -ms-grid-column: 5;
   grid-column: 5;
@@ -296,5 +303,12 @@ body {
       align-self: flex-end;
   height: 250px;
   margin-bottom: -80px;
+}
+
+@media (max-width: 500px) {
+  .dash-8 {
+    height: 150px;
+    margin-bottom: -60px;
+  }
 }
 /*# sourceMappingURL=AboutSection.css.map */

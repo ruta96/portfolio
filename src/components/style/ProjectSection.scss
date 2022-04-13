@@ -12,12 +12,19 @@
     @media (max-width: $small) {
         grid-template-columns: 1fr 5fr 1fr;        
     }
+    @media (max-width: $smartphone) {
+        grid-template-columns: 1fr 10fr 1fr;        
+    }
 }
 
 .project-section{
     grid-column: 2;
     display: grid;
+    margin-top: 120px;
     grid-template-columns: 1fr 5fr 1fr;
+    @media (max-width: $smartphone) {
+        grid-template-columns: 1fr 10fr 1fr;        
+    }
 }
 
 a{
@@ -28,7 +35,6 @@ a{
     display: grid;
     grid-template-columns: 400px 400px;
     justify-self: center;
-    margin-top: 200px;
     gap: 20px;
     color: $background;
     .project-gallery-item{
@@ -41,11 +47,6 @@ a{
         border-radius: 10px;
         box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
         color: $background;
-        @media (max-width: $medium) {
-            grid-template-rows: 180px;     
-        }
-        @media (max-width: $small) {
-        }
         .gallery-item-image{
             height: 80%;
             justify-self: center;
@@ -60,6 +61,9 @@ a{
                 font-size: 45px; 
             }
             }
+        @media (max-width: $medium) {
+            grid-template-rows: 180px;     
+        }
     }
     @media (max-width: $medium) {
         grid-template-columns: 280px 280px;       
@@ -86,19 +90,27 @@ a{
 }
 
 .project-braces-open{
-    margin-top: 150px;
     grid-column: 1;
     justify-self: flex-end;
     @media (max-width: $medium) {
-        justify-self: center;   
+        justify-self: center;
+    }
+    @media (max-width: $small) {
+        left: -20px;
+        top: -15px;
     }   
 }
 
 .project-braces-close{
     grid-column: 3;
-    grid-row-end: 3;
+    grid-row: 2;
     @media (max-width: $medium) {
         justify-self: center;   
+    }
+    
+    @media (max-width: $small) {
+        right: -20px;
+        bottom:115px;
     }   
 }
 
