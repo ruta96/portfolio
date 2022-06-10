@@ -24,16 +24,16 @@ export const LandingSection = () => {
                 <img src={logoback} alt="logo" className='logo-back'/>
                 <img src={logomain} alt="logo" className='logo-front'/>
             </div>
-            <div className='skill skill-js'>JavaScript</div>
-            <div className='skill skill-html'>HTML</div>
-            <div className='skill skill-git'>GIT</div>
-            <div className='skill skill-gsap'>GSAP</div>
-            <div className='skill skill-es6'>ES6</div>
-            <div className='skill skill-css'>CSS</div>
-            <div className='skill skill-sass'>Sass</div>
-            <div className='skill skill-react'>React</div>
-            <div className='skill skill-photoshop'>Photoshop</div>
-            <div className='skill skill-xd'>Adobe Xd</div>
+            <div className='skill skill-js'></div>
+            <div className='skill skill-html'></div>
+            <div className='skill skill-git'></div>
+            <div className='skill skill-gsap'></div>
+            <div className='skill skill-es6'></div>
+            <div className='skill skill-css'></div>
+            <div className='skill skill-sass'></div>
+            <div className='skill skill-react'></div>
+            <div className='skill skill-photoshop'></div>
+            <div className='skill skill-xd'></div>
             <div className="dash dash-1"></div>
             <img src={closeCurlyBracket} alt="bracket" className='curly-bracket close-curly-bracket'/>
         </div>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57.303" height="66.853" viewBox="0 0 57.303 66.853">
+  <defs>
+    <filter id="Icon_awesome-html5">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.502" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <path id="Icon_awesome-html5-2" data-name="Icon awesome-html5" d="M0,2.25,5.208,61.314,28.577,69.1l23.518-7.79L57.3,2.25ZM45.991,21.336H18.564l.612,7.372h26.2L43.35,50.853,28.741,54.882v.045h-.164L13.848,50.853l-.9-11.311h7.118l.522,5.686,7.984,2.164,8.013-2.164.9-9.282H12.58L10.67,14.218H46.648l-.657,7.118Z" transform="translate(0 -2.25)" fill="#006151"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_awesome-html5)">
+      <path id="Icon_awesome-html5-3" data-name="Icon awesome-html5" d="M0,2.25,5.208,61.314,28.577,69.1l23.518-7.79L57.3,2.25ZM45.991,21.336H18.564l.612,7.372h26.2L43.35,50.853,28.741,54.882v.045h-.164L13.848,50.853l-.9-11.311h7.118l.522,5.686,7.984,2.164,8.013-2.164.9-9.282H12.58L10.67,14.218H46.648l-.657,7.118Z" transform="translate(0 -2.25)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

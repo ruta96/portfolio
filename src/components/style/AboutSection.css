@@ -8,13 +8,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-img {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
 .main-container {
   display: -ms-grid;
   display: grid;

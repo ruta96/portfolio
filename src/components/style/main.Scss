@@ -10,10 +10,9 @@ $smartphone: 500px;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-@mixin placeItem($col,$row,$rotate: 0deg, $justify: flex-start){
+@mixin placeItem($col,$row, $justify: flex-start){
   grid-column: $col;
   grid-row: $row;
-  transform: rotate($rotate);
   justify-self: $justify;
 }
 

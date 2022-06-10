@@ -8,13 +8,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-img {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
 .main-container {
   display: -ms-grid;
   display: grid;
@@ -108,51 +101,44 @@ a {
       grid-template-columns: 400px 400px;
   -ms-grid-column-align: center;
       justify-self: center;
-  gap: 20px;
+  gap: 30px;
+  margin-top: 30px;
   color: #006151;
 }
 
 .project-gallery .project-gallery-item {
   position: relative;
-  z-index: 1;
-  width: 100%;
-  background-color: #00E0BB;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 250px;
-      grid-template-rows: 250px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-  color: #006151;
+  background-color: #5AE6CE;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  padding: 30px;
 }
 
 .project-gallery .project-gallery-item .gallery-item-image {
-  height: 80%;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  width: calc(25% - 10px);
+  margin: 5px;
+  opacity: 0.3;
 }
 
 .project-gallery .project-gallery-item .gallery-item-text {
+  color: #006151;
+  font-size: 40px;
   font-weight: 500;
-  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
   text-align: center;
-  place-self: center;
 }
 
 @media (max-width: 1450px) {
   .project-gallery .project-gallery-item .gallery-item-text {
-    font-size: 45px;
+    font-size: 28px;
   }
 }
 
-@media (max-width: 1450px) {
-  .project-gallery .project-gallery-item {
-    -ms-grid-rows: 180px;
-        grid-template-rows: 180px;
+@media (max-width: 500px) {
+  .project-gallery .project-gallery-item .gallery-item-text {
+    font-size: 20px;
   }
 }
 
@@ -208,7 +194,7 @@ a {
 @media (max-width: 800px) {
   .project-braces-open {
     left: -20px;
-    top: -15px;
+    top: 0px;
   }
 }
 
@@ -229,7 +215,7 @@ a {
 @media (max-width: 800px) {
   .project-braces-close {
     right: -20px;
-    bottom: 115px;
+    bottom: 100px;
   }
 }
 
@@ -259,5 +245,9 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.active-image {
+  opacity: 1 !important;
 }
 /*# sourceMappingURL=ProjectSection.css.map */
